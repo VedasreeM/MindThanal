@@ -419,3 +419,56 @@ body {
     border-top-color: #374151;
   }
 }
+
+/* Button Group */
+.button-group {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.utility-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+  color: #1f2937;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.utility-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #dbeafe 0%, #e2e8f0 100%);
+}
+
+.utility-button:active {
+  transform: scale(0.98);
+}
+
+.utility-button.stop-speaking {
+  background: linear-gradient(135deg, #01a3fb 0%, #09abe1 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.utility-button.stop-speaking:hover {
+  background: linear-gradient(135deg, #0abeeb 0%, #00c3ff 100%);
+}
+
+.utility-button.clear-chat {
+  background: linear-gradient(135deg, #01a3fb 0%, #09abe1 100%);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.utility-button.clear-chat:hover {
+  background: linear-gradient(135deg, #0abeeb 0%, #00c3ff 100%);
+}
