@@ -90,18 +90,6 @@ const stopListening = () => {
   }
 };
 
-async function sendMessage(userMessage) {
-  const API = "https://mindthanal.onrender.com";
-  const res = await fetch(`${API}/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: userMessage })
-  });
-  const data = await res.json();
-  return data.response;
-}
-
-
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
